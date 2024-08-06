@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 한솔제지 공통 외부 스타일 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 한솔제지 서브페이지 공통 스타일 -->
+    <link rel="stylesheet" href="./css/sub-page.css">
+    <title>한솔제지</title>
+    <style>
+        .l-txt{
+            width:100%;
+            margin-bottom:95px;
+        }
+        .sec .art{
+            flex-flow:row wrap;
+            justify-content:space-between;           
+            width:100%;
+            margin-bottom:160px;
+        }
+        .sec .art01 .img-box{
+            margin-bottom:46px;
+        }
+        .sec .art h3,.sec .art p{
+            width:505px;
+            margin:0;
+        }        
+        .sec .art02,.sec .art03{
+            flex-flow:column nowrap;
+            align-items:flex-end;
+            position:relative;
+            margin-bottom:430px;
+        }
+        .sec .art03{
+            align-items:flex-start;
+        }
+        .sec .art02 h3,.sec .art03 h3{
+            margin-bottom:120px;
+            line-height:1.3;
+        }
+        .sec .art02 .img-box{
+            position:absolute;
+            right:630px;
+            top:0;
+            width:950px;
+        }
+        .sec .art03 .img-box{
+            position:absolute;
+            left:525px;
+            top:0;
+            width:1055px;
+        } 
+
+
+    </style>
+
+</head>
+<body>
+    <section class="wrap">
+        <header class="header">
+            <div class="container">
+                <h1>
+                    <a class="logo before after" href="./index.html">
+                        <span>Hansol</span><span>한솔제지</span>
+                    </a>
+                </h1>
+                <nav>
+                    <ul class="main-nav">
+                        <li>
+                            <!-- ::before -->
+                            <a href="./product.html">제품소개</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">인스퍼</a></li>
+                                <li><a href="#">인쇄용지</a></li>
+                                <li><a href="#">산업용지</a></li>
+                                <li><a href="#">특수지</a></li>
+                                <li><a href="#">감열지</a></li>
+                                <li><a href="#">신소재</a></li>
+                            </ul>
+                            <!-- ::after -->
+                        </li>
+                        <li>
+                            <a href="./company.html">회사소개</a>
+                            <ul class="sub-nav">
+                                <li><a href="./company.html">한솔제지</a></li>
+                                <li><a href="#">이념과 비전</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">CEO인사</a></li>
+                                <li><a href="#">문화사업</a></li>
+                                <li><a href="#">사업장소개</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./environ.html">지속가능경영</a>
+                            <ul class="sub-nav">
+                                <li><a href="./environ.html">그린경영</a></li>
+                                <li><a href="#">사회책임경영</a></li>
+                                <li><a href="#">인권경영</a></li>
+                                <li><a href="#">기업지배구조</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./ir.html">투자정보</a>
+                            <ul class="sub-nav">
+                                <li><a href="./ir.html">재무정보</a></li>
+                                <li><a href="#">공시정보</a></li>
+                                <li><a href="#">배당현황</a></li>
+                                <li><a href="#">전자공고</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">인재채용</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">인사제도</a></li>
+                                <li><a href="#">채용정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">소식</a>
+                            <ul class="sub-nav">
+                                <li><a href="#">뉴스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="q-nav">
+                    <ul>
+                        <li><a href="#">고객문의</a></li>
+                        <li><a href="https://www.hansolexhibition.com/">가상전시관</a></li>
+                        <li><a href="#">Eng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <!-- <section class="sec sec-company">
+            <div class="container">
+                <h2 class="l-tit">회사소개</h2>
+                <p class="l-txt">인류의 과거, 현재, 미래를 함께 할 수 잇는 종이소재로 새로운 인류 문화와 고객의 미래를 창조합니다.</p>
+
+                <article class="art art01">
+                    <h3 class="s-tit">한솔그룹의 출발점이자 근간</h3>
+                    <div class="img-box">
+                        <a href="#"><img src="./imgs/img_c_h_1.jpg" alt="imgc01"></a>
+                    </div>
+                    <p class="m-txt">1965년 10월 삼성그룹의 고 이병철 회장이 새한제지를 인수,<br>1968년 10월 1일 첫 제품을 출시한 이래<br>종이를 통해 국민문화 창달과 국가경제 발전을 실천해 온 기업입니다.</p>
+                </article>
+                <article class="art art02">
+                    <h3 class="s-tit">끊임없는 기술개발과<br>품질 일등주의</h3>
+                    <div class="img-box">
+                        <a href="#"><img src="./imgs/img_c_h_2.jpg" alt="imgc02"></a>
+                    </div>
+                    <p class="m-txt">국내외 생산, 유통, 판매를 연결한 통합 시스템을 통해<br>글로벌 선진 제지사로 발돋움 하였습니다<br><br>생산에서 납기까지 품질관리를 위한 끊임없는 노력과<br>국제인증 획득 및 R&D 역량 강화를 통한 차별화된<br>신제품을 개발하여 고객의 니즈를 충족시키고 있습니다.</div></p>
+                </article>
+                <article class="art art03">
+                    <h3 class="s-tit">세계 최고의<br>가치 창출기업</h3>
+                    <div class="img-box">
+                        <a href="#"><img src="./imgs/img_c_h_3.jpg" alt="가치창출"></a>
+                    </div>
+                    <p class="m-txt">한국 제지업계 최초 ERP 시스템을 도입으로 경영효율화를 이루며<br>국내 선도 제지사로서의 역할을 다하고 있습니다. <br><br>'고객지향, 새로운 가치, 더 나은 방식, 차별적 경쟁 우위'라는<br>4가지 사업원칙으로 세계적인 제지기업으로서 성장하기 위해<br>나아가고 있습니다.</p>
+                </article>
+            </div>
+        </section> -->
+
+        <section class="sec sec-company">
+            <div class="container">
+                <h2 class="l-tit">회사소개</h2>
+                <p class="l-txt">인류의 과거, 현재, 미래를 함께 할 수 있는 종이소재로 새로운 인류 문화와 고객의 미래를 창조합니다.</p>
+                <article class="art art01">
+                    <h3 class="s-tit">한솔그룹의 출발점이자 근간</h3>
+                    <div class="img-box">
+                        <a href="#"><img src="./imgs/img_c_h_1.jpg" alt="한솔 근간"></a>
+                    </div>
+                    <p class="m-txt">1965년 10월 삼성그룹의 고 이병철 회장이 새한제지를 인수,<br>1968년 10월 1일 첫 제품을 출시한 이래<br>종이를 통해 국민문화 창달과 국가경제 발전을 실천해 온 기업입니다.</p>
+                </article>
+                <article class="art art02">
+                    <h3 class="s-tit">끊임없는 기술 개발과<br>품질 일등주의</h3>
+                    <div class="img-box">
+                        <a href="#"><img src="./imgs/img_c_h_2.jpg" alt="일등주의"></a>
+                    </div>
+                    <p class="m-txt">국내외 생산, 유통, 판매를 연결한 통합 시스템을 통해<br>글로벌 선진 제지사로 발돋움 하였습니다. <br><br>생산에서 납기까지 품질관리를 위한 끊임없는 노력과<br>국제인증 획득 및 R&D 역량 강화를 통한 차별화된<br>신제품을 개발하여 고객의 니즈를 충족시키고 있습니다.</p>
+                </article>
+                <article class="art art03">
+                    <h3 class="s-tit">세계 최고의<br>가치 창출기업</h3>
+                    <div class="img-box">
+                        <a href="#"><img src="./imgs/img_c_h_3.jpg" alt="가치창출"></a>
+                    </div>
+                    <p class="m-txt">한국 제지업계 최초 ERP 시스템을 도입으로 경영효율화를 이루며<br>국내 선도 제지사로서의 역할을 다하고 있습니다. <br><br>'고객지향, 새로운 가치, 더 나은 방식, 차별적 경쟁 우위'라는<br>4가지 사업원칙으로 세계적인 제지기업으로서 성장하기 위해<br>나아가고 있습니다.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <a class="logo before after" href="./index.html">
+                        <span>Hansol</span><span>한솔제지</span>
+                    </a>
+                </div>
+                <address>서울 중구 을지로 100(을지로2가) 파인애비뉴 B동 23~24층<br>Copyright 2020. Hansol Paper., Ltd All reights reserved.</address>
+                <div class="footer-nav">
+                    <strong><a href="#">개인정보처리방침</a></strong>
+                    <select>
+                        <option disabled selected>Family Site</option>
+                        <option>한솔정유</option>
+                        <option>한솔미디어</option>
+                        <option>한솔엔터</option>
+                        <option>한솔전자</option>
+                        <option>한솔건축</option>
+                    </select>
+                    <a href="https://www.instagram.com/hansolpaper_official/" class="sns insta">인스타</a>
+                    <a href="https://www.facebook.com/hansolpaper" class="sns face">페이스북</a>
+                    
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    
+</body>
+</html>

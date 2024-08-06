@@ -1,0 +1,47 @@
+.l-tit{
+    width:100%;
+    margin-bottom:74px;
+    font-weight:700;
+    font-size:60px;
+}
+.m-tit{
+    font-weight:700;
+    font-size:44px;
+}
+.s-tit{
+    font-weight:700;
+    font-size:32px;
+}
+.l-tXt{
+    font-size:18px;
+    line-height:36px;
+}
+.m-txt{
+    font-size:16px;
+    line-height:24px;
+    color:#444;
+}
+.sec{
+    padding-top:250px;
+    padding-bottom:110px;
+}
+.sec .container{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    width:1240px;
+    margin:0 auto;
+}
+.sec .art{
+    display:flex;
+    flex-flow:column nowrap;
+    width:368px;
+    margin-bottom:90px;
+}
+.sec .art h3{
+    order:2;
+    margin-top:45px;
+    margin-bottom:20px;
+}
+.sec .art .img-box{order:1}
+.sec .art p{order:3}

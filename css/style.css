@@ -1,0 +1,212 @@
+@font-face {
+    font-family:'NotoSansKR';
+    src: url(../fontS/NotoSansKR.ttf);
+}
+:root{
+    font-family:'NotoSansKR';
+    font-weight:400;
+    font-size:14px;
+    line-height:1;
+    color:#222;
+}
+.wrap{
+    overflow:hidden;
+}
+.header{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;            
+    z-index:100;
+    border-bottom:1px solid #bbb;
+    background:#fff;
+}
+.header .container{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+    width:1240px;
+    height:93px;
+    margin:0 auto;
+}
+.logo {
+    position:relative;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:flex-end;
+    width:117px;
+    height:51px; 
+}
+.logo span:first-child{
+    font-weight:800;
+    font-size:31px;
+}
+.logo span:last-child{
+    font-weight:500;
+}
+.logo::before,.logo::after{
+    position:absolute;
+    left:0;
+    top:6px;
+    width:8px;
+    height:8px;
+    background:#00f;
+}
+.logo::after{
+    top:21px;
+    background:#0f0;
+}
+.main-nav{
+    display:flex;
+    font-weight:500;
+    font-size:22px;            
+}
+.main-nav>li{
+    position:relative;
+    margin:0 16px;
+}        
+.main-nav>li:hover{
+    color:#00f;
+}
+.main-nav>li::before{
+    content:'';
+    display:none;
+    position:fixed;
+    left:0;
+    right:0;
+    top:94px;
+    z-index:1;
+    height:80px;
+    background:#ccc;
+}
+.main-nav>li:hover::before{
+    display:block;
+}
+.main-nav>li::after{
+    position:absolute;
+    left:0;
+    top:55px;
+    content:'';
+    display:block;
+    width:0;
+    height:3px;
+    background:#00f;
+    transition:width 0.3s ease 0s;
+}
+
+
+/* 나중에 스크립트로 대체된 내용 */
+.main-nav>li:hover::after{
+    width:100%;
+}
+/* 나중에 스크립트로 대체된 내용 */
+.sub-nav{           
+    display:none;
+    position:absolute;
+    left:0;
+    top:85px;
+    z-index:2;
+    flex-flow:row nowrap;
+    width:1000px;
+    font-size:16px;           
+} 
+.main-nav>li:hover .sub-nav{
+    display:flex;
+}       
+.sub-nav li{
+    margin-right:32px;
+    color:#222;
+}
+.sub-nav li:hover{
+    color:#00f;
+}
+
+.q-nav ul{
+    display:flex;
+}
+.q-nav li{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-bottom:0.5px;
+}
+.q-nav li:first-child{            
+    height:32px;
+    margin-right:27px;            
+    font-weight:500;
+    font-size:14px;
+}
+.q-nav li:nth-child(2){            
+    width:120px;
+    height:32px;
+    margin-right:8px;
+    border-radius:16px;
+    padding-right:15px;
+    background:#0f0 url(../imgs/ico01.png) no-repeat 12px center;
+    background-size:23px;
+    font-weight:900;
+    color:#fff;
+}
+.q-nav li:last-child{
+    justify-content:center;
+    width:32px;
+    height:32px;
+    border-radius:16px;
+    background:#00f;
+    font-weight:900;
+    font-size:12px;
+    color:#fff;
+    text-align:center;
+}
+
+.sec,.footer{
+    position:relative;
+    z-index:10;
+}
+
+.footer{
+    padding:54px 0;
+    background:#ccc;
+}
+.footer .container{
+    display:flex;            
+    width:1240px;
+    margin:0 auto;
+}
+.footer .footer-logo{
+    width:210px;
+}
+.footer address{
+    width:706px;
+    line-height:28px;
+}
+.footer .footer-nav{
+    width:324px;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:flex-end;           
+}
+.footer .footer-nav strong{
+    margin-right:30px;
+    padding-top:9px;
+    font-weight:700;
+    color:#000;
+}
+.footer .footer-nav select{
+    width:190px;
+    height:31px;
+    margin-bottom:14px;
+}       
+.footer .footer-nav .sns{
+    width:31px;
+    height:31px;
+    margin-left:9px;
+    background:url(../imgs/ico-insta.png) no-repeat center;
+    background-size:contain;
+    text-indent:-999999px;
+}
+.footer .footer-nav .face{
+    background-image:url(../imgs/ico-faceb.png);
+}
